@@ -1,0 +1,6 @@
+framework module Pods_IEEE_NSUT {
+  umbrella header "Pods-IEEE NSUT-umbrella.h"
+
+  export *
+  module * { export * }
+}
