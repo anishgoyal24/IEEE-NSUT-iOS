@@ -308,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjF-kb-Tx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942.0289855072465" y="-302.00892857142856"/>
+            <point key="canvasLocation" x="2852.1739130434785" y="-302.00892857142856"/>
         </scene>
         <!--Event Details View Controller-->
         <scene sceneID="wXL-nD-TW7">
@@ -396,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQ1-yW-jRj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2842.0289855072465" y="-302.00892857142856"/>
+            <point key="canvasLocation" x="3752.1739130434785" y="-302.00892857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dp6-3L-Cq5">
@@ -411,7 +411,7 @@
                         <segue destination="Co0-Zp-B7Q" kind="relationship" relationship="viewControllers" id="4ty-CU-nQM"/>
                         <segue destination="pEm-E4-oeN" kind="relationship" relationship="viewControllers" id="baF-Vu-LPl"/>
                         <segue destination="0Pl-P2-a0i" kind="relationship" relationship="viewControllers" id="rFb-0c-AYl"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="MCu-9g-NNV"/>
+                        <segue destination="N8r-aZ-Y7a" kind="relationship" relationship="viewControllers" id="MCu-9g-NNV"/>
                         <segue destination="EzD-LX-zCc" kind="relationship" relationship="viewControllers" id="tCK-uU-bDT"/>
                     </connections>
                 </tabBarController>
@@ -438,18 +438,33 @@
         <!--Achievements-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IEEE_NSUT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AchievementViewController" customModule="IEEE_NSUT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yzl-Sc-BA6">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yzl-Sc-BA6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BVj-ZE-2qq"/>
+                            <constraint firstItem="Yzl-Sc-BA6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FpL-6A-JJy"/>
+                            <constraint firstItem="Yzl-Sc-BA6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pNv-LX-NJ7"/>
+                            <constraint firstItem="Yzl-Sc-BA6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="q9H-li-aOV"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Achievements" image="icons8-prize-50" id="xzc-eo-o8A"/>
+                    <navigationItem key="navigationItem" title="Achievements" id="e1F-4i-pMz"/>
+                    <connections>
+                        <outlet property="tableView" destination="Yzl-Sc-BA6" id="y3o-Gt-iUN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.8840579710145" y="-935.49107142857133"/>
+            <point key="canvasLocation" x="1942.0289855072465" y="-935.49107142857133"/>
         </scene>
         <!--Events-->
         <scene sceneID="fIZ-4S-jwG">
@@ -500,6 +515,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kv-Tq-UlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="304.6875"/>
+        </scene>
+        <!--Achievements-->
+        <scene sceneID="9ho-PM-FZ7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N8r-aZ-Y7a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Achievements" image="icons8-prize-50" id="xzc-eo-o8A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ztN-oX-AD4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ai8-MX-AYB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="We9-qU-Bpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="-935.49107142857133"/>
         </scene>
     </scenes>
     <resources>
