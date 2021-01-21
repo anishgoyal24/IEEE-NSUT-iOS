@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class EventDetailsViewController: UIViewController {
     
@@ -25,16 +26,13 @@ class EventDetailsViewController: UIViewController {
     }
     
     func loadImage(){
-        let url:URL? = URL(string: selectedEvent.imageList[0])
-        if let uri = url{
-            DispatchQueue.main.async {
-                do {
-                    let data:Data? = try Data(contentsOf : uri)
-                    self.eventImage.image = UIImage(data: data!)
-                } catch {
-                    print("error")
+        AF.request(selectedEvent.imageList[0], method: .get).responseData { (response) in
+            switch response.result {
+                case .success(let responseData):
+                    self.eventImage.image = UIImage(data: responseData, scale:1)
+                case .failure(let error):
+                    print(error)
                 }
-            }
         }
     }
     

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C14BDCBE8B20C4E706F4955F /* Pods_IEEE_NSUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC6100AEA63FA8503381031 /* Pods_IEEE_NSUT.framework */; };
+		F8938C8F25B99CE100B8A25D /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938C8D25B99CE100B8A25D /* ProjectCell.swift */; };
+		F8938C9025B99CE100B8A25D /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8938C8E25B99CE100B8A25D /* ProjectCell.xib */; };
+		F8938C9325B99D8D00B8A25D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938C9225B99D8D00B8A25D /* Project.swift */; };
+		F8938C9625B99E1400B8A25D /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938C9525B99E1400B8A25D /* ProjectsViewController.swift */; };
+		F8938C9925B9A69000B8A25D /* ProjectDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938C9825B9A69000B8A25D /* ProjectDetailedViewController.swift */; };
 		F8F7ECA525B5AED7005EE1F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA425B5AED7005EE1F1 /* AppDelegate.swift */; };
 		F8F7ECA725B5AED7005EE1F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */; };
 		F8F7ECA925B5AED7005EE1F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA825B5AED7005EE1F1 /* ViewController.swift */; };
@@ -31,6 +36,11 @@
 /* Begin PBXFileReference section */
 		12008329553D936F12126A9E /* Pods-IEEE NSUT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IEEE NSUT.debug.xcconfig"; path = "Target Support Files/Pods-IEEE NSUT/Pods-IEEE NSUT.debug.xcconfig"; sourceTree = "<group>"; };
 		777EC9AE2DD141F70522942A /* Pods-IEEE NSUT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IEEE NSUT.release.xcconfig"; path = "Target Support Files/Pods-IEEE NSUT/Pods-IEEE NSUT.release.xcconfig"; sourceTree = "<group>"; };
+		F8938C8D25B99CE100B8A25D /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		F8938C8E25B99CE100B8A25D /* ProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCell.xib; sourceTree = "<group>"; };
+		F8938C9225B99D8D00B8A25D /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		F8938C9525B99E1400B8A25D /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		F8938C9825B9A69000B8A25D /* ProjectDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailedViewController.swift; sourceTree = "<group>"; };
 		F8F7ECA125B5AED7005EE1F1 /* IEEE NSUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IEEE NSUT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F7ECA425B5AED7005EE1F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +136,8 @@
 				F8F7ED2225B83CF0005EE1F1 /* EventDetailsViewController.swift */,
 				F8F7ED2625B96D80005EE1F1 /* FeaturedViewController.swift */,
 				F8F7ED4325B994F2005EE1F1 /* FeaturedDetailViewController.swift */,
+				F8938C9525B99E1400B8A25D /* ProjectsViewController.swift */,
+				F8938C9825B9A69000B8A25D /* ProjectDetailedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +150,8 @@
 				F8F7ED1E25B823C4005EE1F1 /* EventCell.xib */,
 				F8F7ED2C25B97257005EE1F1 /* FeaturedPostCell.swift */,
 				F8F7ED2D25B97257005EE1F1 /* FeaturedPostCell.xib */,
+				F8938C8D25B99CE100B8A25D /* ProjectCell.swift */,
+				F8938C8E25B99CE100B8A25D /* ProjectCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +161,7 @@
 			children = (
 				F8F7ECF325B708C5005EE1F1 /* Event.swift */,
 				F8F7ED2925B97017005EE1F1 /* FeaturedPost.swift */,
+				F8938C9225B99D8D00B8A25D /* Project.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8938C9025B99CE100B8A25D /* ProjectCell.xib in Resources */,
 				F8F7ECB125B5AEDA005EE1F1 /* LaunchScreen.storyboard in Resources */,
 				F8F7ED2F25B97257005EE1F1 /* FeaturedPostCell.xib in Resources */,
 				F8F7ECFF25B70F4A005EE1F1 /* GoogleService-Info.plist in Resources */,
@@ -268,14 +284,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8938C9925B9A69000B8A25D /* ProjectDetailedViewController.swift in Sources */,
 				F8F7ECF925B7098D005EE1F1 /* EventViewController.swift in Sources */,
 				F8F7ED2E25B97257005EE1F1 /* FeaturedPostCell.swift in Sources */,
 				F8F7ECF425B708C5005EE1F1 /* Event.swift in Sources */,
 				F8F7ED4425B994F2005EE1F1 /* FeaturedDetailViewController.swift in Sources */,
 				F8F7ECA925B5AED7005EE1F1 /* ViewController.swift in Sources */,
+				F8938C9325B99D8D00B8A25D /* Project.swift in Sources */,
+				F8938C9625B99E1400B8A25D /* ProjectsViewController.swift in Sources */,
 				F8F7ED2325B83CF0005EE1F1 /* EventDetailsViewController.swift in Sources */,
 				F8F7ED2725B96D80005EE1F1 /* FeaturedViewController.swift in Sources */,
 				F8F7ED2A25B97017005EE1F1 /* FeaturedPost.swift in Sources */,
+				F8938C8F25B99CE100B8A25D /* ProjectCell.swift in Sources */,
 				F8F7ECA525B5AED7005EE1F1 /* AppDelegate.swift in Sources */,
 				F8F7ECA725B5AED7005EE1F1 /* SceneDelegate.swift in Sources */,
 				F8F7ECFC25B70CEC005EE1F1 /* Constants.swift in Sources */,
