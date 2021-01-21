@@ -70,16 +70,6 @@ extension FeaturedViewController: UITableViewDelegate, UITableViewDataSource{
                             print(error)
                         }
                 }
-//                let url:URL? = URL(string: self.featuredPosts[indexPath.row].imageUrl)
-//                if let uri = url{
-//                    do {
-//                        let data:Data? = try Data(contentsOf : uri)
-//                        self.imageCache.setObject(UIImage(data: data!)!, forKey: self.featuredPosts[indexPath.row].id as AnyObject)
-//                        cell.postImage.image = UIImage(data: data!)
-//                    } catch {
-//                        print("error")
-//                    }
-//                }
             }
         }
         return cell
