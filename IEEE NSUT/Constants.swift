@@ -11,4 +11,7 @@ struct K {
     static let eventCellIdentifier = "eventCellIdentifier"
     static let eventCellNib = "EventCell"
     static let eventDetailSegue = "eventDetailSegue"
+    
+    static let featuredPostIdentifier = "featuredPostIdentifier"
+    static let featuredPostNib = "FeaturedPostCell"
 }

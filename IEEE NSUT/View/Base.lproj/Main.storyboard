@@ -25,21 +25,36 @@
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="304.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Featured-->
         <scene sceneID="a8s-ID-wOS">
             <objects>
-                <viewController id="Co0-Zp-B7Q" sceneMemberID="viewController">
+                <viewController title="Featured" id="Co0-Zp-B7Q" customClass="FeaturedViewController" customModule="IEEE_NSUT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ezD-ry-6TD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a2h-7s-9O5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8Jm-v1-OKy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a2h-7s-9O5" firstAttribute="leading" secondItem="8Jm-v1-OKy" secondAttribute="leading" id="7ap-Bl-XiP"/>
+                            <constraint firstItem="a2h-7s-9O5" firstAttribute="top" secondItem="8Jm-v1-OKy" secondAttribute="top" id="QID-LY-720"/>
+                            <constraint firstItem="a2h-7s-9O5" firstAttribute="bottom" secondItem="8Jm-v1-OKy" secondAttribute="bottom" id="hev-8O-IgJ"/>
+                            <constraint firstItem="a2h-7s-9O5" firstAttribute="trailing" secondItem="8Jm-v1-OKy" secondAttribute="trailing" id="w6e-1n-bbb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="Lco-fP-hZ1"/>
+                    <connections>
+                        <outlet property="tableView" destination="a2h-7s-9O5" id="97g-Vu-qOC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLL-ha-JWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="110" y="948"/>
+            <point key="canvasLocation" x="108.69565217391305" y="947.54464285714278"/>
         </scene>
         <!--Events List-->
         <scene sceneID="PQe-Vw-dU5">
@@ -95,7 +110,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neD-tT-wQU">
                                                 <rect key="frame" x="21" y="362" width="343" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -105,7 +120,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpe-1v-mfH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpe-1v-mfH">
                                                 <rect key="frame" x="21" y="482.5" width="343" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>

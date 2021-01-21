@@ -27,11 +27,13 @@ class EventDetailsViewController: UIViewController {
     func loadImage(){
         let url:URL? = URL(string: selectedEvent.imageList[0])
         if let uri = url{
-            do {
-                let data:Data? = try Data(contentsOf : uri)
-                self.eventImage.image = UIImage(data: data!)
-            } catch {
-                print("error")
+            DispatchQueue.main.async {
+                do {
+                    let data:Data? = try Data(contentsOf : uri)
+                    self.eventImage.image = UIImage(data: data!)
+                } catch {
+                    print("error")
+                }
             }
         }
     }

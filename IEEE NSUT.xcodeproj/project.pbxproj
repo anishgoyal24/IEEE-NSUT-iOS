@@ -21,6 +21,10 @@
 		F8F7ED1F25B823C4005EE1F1 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ED1D25B823C4005EE1F1 /* EventCell.swift */; };
 		F8F7ED2025B823C4005EE1F1 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F7ED1E25B823C4005EE1F1 /* EventCell.xib */; };
 		F8F7ED2325B83CF0005EE1F1 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ED2225B83CF0005EE1F1 /* EventDetailsViewController.swift */; };
+		F8F7ED2725B96D80005EE1F1 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ED2625B96D80005EE1F1 /* FeaturedViewController.swift */; };
+		F8F7ED2A25B97017005EE1F1 /* FeaturedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ED2925B97017005EE1F1 /* FeaturedPost.swift */; };
+		F8F7ED2E25B97257005EE1F1 /* FeaturedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ED2C25B97257005EE1F1 /* FeaturedPostCell.swift */; };
+		F8F7ED2F25B97257005EE1F1 /* FeaturedPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F7ED2D25B97257005EE1F1 /* FeaturedPostCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		F8F7ED1D25B823C4005EE1F1 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		F8F7ED1E25B823C4005EE1F1 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		F8F7ED2225B83CF0005EE1F1 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		F8F7ED2625B96D80005EE1F1 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
+		F8F7ED2925B97017005EE1F1 /* FeaturedPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPost.swift; sourceTree = "<group>"; };
+		F8F7ED2C25B97257005EE1F1 /* FeaturedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPostCell.swift; sourceTree = "<group>"; };
+		F8F7ED2D25B97257005EE1F1 /* FeaturedPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedPostCell.xib; sourceTree = "<group>"; };
 		FBC6100AEA63FA8503381031 /* Pods_IEEE_NSUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IEEE_NSUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +122,7 @@
 				F8F7ECA825B5AED7005EE1F1 /* ViewController.swift */,
 				F8F7ECF825B7098D005EE1F1 /* EventViewController.swift */,
 				F8F7ED2225B83CF0005EE1F1 /* EventDetailsViewController.swift */,
+				F8F7ED2625B96D80005EE1F1 /* FeaturedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -124,6 +133,8 @@
 				F8F7ECAA25B5AED7005EE1F1 /* Main.storyboard */,
 				F8F7ED1D25B823C4005EE1F1 /* EventCell.swift */,
 				F8F7ED1E25B823C4005EE1F1 /* EventCell.xib */,
+				F8F7ED2C25B97257005EE1F1 /* FeaturedPostCell.swift */,
+				F8F7ED2D25B97257005EE1F1 /* FeaturedPostCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F7ECF325B708C5005EE1F1 /* Event.swift */,
+				F8F7ED2925B97017005EE1F1 /* FeaturedPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F7ECB125B5AEDA005EE1F1 /* LaunchScreen.storyboard in Resources */,
+				F8F7ED2F25B97257005EE1F1 /* FeaturedPostCell.xib in Resources */,
 				F8F7ECFF25B70F4A005EE1F1 /* GoogleService-Info.plist in Resources */,
 				F8F7ECAE25B5AEDA005EE1F1 /* Assets.xcassets in Resources */,
 				F8F7ED2025B823C4005EE1F1 /* EventCell.xib in Resources */,
@@ -253,9 +266,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F7ECF925B7098D005EE1F1 /* EventViewController.swift in Sources */,
+				F8F7ED2E25B97257005EE1F1 /* FeaturedPostCell.swift in Sources */,
 				F8F7ECF425B708C5005EE1F1 /* Event.swift in Sources */,
 				F8F7ECA925B5AED7005EE1F1 /* ViewController.swift in Sources */,
 				F8F7ED2325B83CF0005EE1F1 /* EventDetailsViewController.swift in Sources */,
+				F8F7ED2725B96D80005EE1F1 /* FeaturedViewController.swift in Sources */,
+				F8F7ED2A25B97017005EE1F1 /* FeaturedPost.swift in Sources */,
 				F8F7ECA525B5AED7005EE1F1 /* AppDelegate.swift in Sources */,
 				F8F7ECA725B5AED7005EE1F1 /* SceneDelegate.swift in Sources */,
 				F8F7ECFC25B70CEC005EE1F1 /* Constants.swift in Sources */,

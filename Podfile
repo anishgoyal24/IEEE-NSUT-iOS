@@ -4,6 +4,7 @@ target 'IEEE NSUT' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Firebase/Firestore'
+  pod 'Alamofire', '~> 5.2'
 end
 
 post_install do |installer|
