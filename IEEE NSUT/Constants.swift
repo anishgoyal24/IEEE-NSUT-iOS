@@ -15,6 +15,9 @@ struct K {
     static let featuredPostIdentifier = "featuredPostIdentifier"
     static let featuredPostNib = "FeaturedPostCell"
     static let featuredPostSegue = "featuredPostSegue"
+    static let menuSegue = "menuSegue"
+    static let menuCell = "menuCell"
+    static let menuItems = ["About IEEE", "Execomm", "Contact Us", "Buy Membership", "App Developer"]
     
     static let projectIdentifier = "projectIdentifier"
     static let projectNib = "ProjectCell"

@@ -52,6 +52,11 @@ class FeaturedViewController: UIViewController{
             vc.featuredPost = featuredPosts[sender as! Int]
         }
     }
+    
+    @IBAction func menuButtonAction() {
+        performSegue(withIdentifier: K.menuSegue, sender: nil)
+    }
+    
 
 }
 
