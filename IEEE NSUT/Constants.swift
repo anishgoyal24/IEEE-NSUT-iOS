@@ -14,4 +14,5 @@ struct K {
     
     static let featuredPostIdentifier = "featuredPostIdentifier"
     static let featuredPostNib = "FeaturedPostCell"
+    static let featuredPostSegue = "featuredPostSegue"
 }

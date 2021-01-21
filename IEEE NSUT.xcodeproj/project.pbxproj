@@ -25,6 +25,7 @@
 		F8F7ED2A25B97017005EE1F1 /* FeaturedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ED2925B97017005EE1F1 /* FeaturedPost.swift */; };
 		F8F7ED2E25B97257005EE1F1 /* FeaturedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ED2C25B97257005EE1F1 /* FeaturedPostCell.swift */; };
 		F8F7ED2F25B97257005EE1F1 /* FeaturedPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F7ED2D25B97257005EE1F1 /* FeaturedPostCell.xib */; };
+		F8F7ED4425B994F2005EE1F1 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ED4325B994F2005EE1F1 /* FeaturedDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		F8F7ED2925B97017005EE1F1 /* FeaturedPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPost.swift; sourceTree = "<group>"; };
 		F8F7ED2C25B97257005EE1F1 /* FeaturedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPostCell.swift; sourceTree = "<group>"; };
 		F8F7ED2D25B97257005EE1F1 /* FeaturedPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedPostCell.xib; sourceTree = "<group>"; };
+		F8F7ED4325B994F2005EE1F1 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
 		FBC6100AEA63FA8503381031 /* Pods_IEEE_NSUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IEEE_NSUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				F8F7ECF825B7098D005EE1F1 /* EventViewController.swift */,
 				F8F7ED2225B83CF0005EE1F1 /* EventDetailsViewController.swift */,
 				F8F7ED2625B96D80005EE1F1 /* FeaturedViewController.swift */,
+				F8F7ED4325B994F2005EE1F1 /* FeaturedDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				F8F7ECF925B7098D005EE1F1 /* EventViewController.swift in Sources */,
 				F8F7ED2E25B97257005EE1F1 /* FeaturedPostCell.swift in Sources */,
 				F8F7ECF425B708C5005EE1F1 /* Event.swift in Sources */,
+				F8F7ED4425B994F2005EE1F1 /* FeaturedDetailViewController.swift in Sources */,
 				F8F7ECA925B5AED7005EE1F1 /* ViewController.swift in Sources */,
 				F8F7ED2325B83CF0005EE1F1 /* EventDetailsViewController.swift in Sources */,
 				F8F7ED2725B96D80005EE1F1 /* FeaturedViewController.swift in Sources */,

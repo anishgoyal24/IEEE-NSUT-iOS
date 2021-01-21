@@ -45,6 +45,13 @@ class FeaturedViewController: UIViewController{
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is FeaturedDetailViewController{
+            let vc = segue.destination as! FeaturedDetailViewController
+            vc.featuredPost = featuredPosts[sender as! Int]
+        }
+    }
 
 }
 
@@ -73,6 +80,11 @@ extension FeaturedViewController: UITableViewDelegate, UITableViewDataSource{
             }
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: K.featuredPostSegue, sender: indexPath.row)
     }
     
     
