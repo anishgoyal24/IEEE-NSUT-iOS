@@ -19,6 +19,7 @@ class EventDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        eventDesc.numberOfLines = 0
         eventTitle.text = selectedEvent?.title
         eventDesc.text = selectedEvent?.description
         eventDate.text = selectedEvent?.date

@@ -20,6 +20,10 @@
 		F8938CAE25BAC6E000B8A25D /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CAC25BAC6E000B8A25D /* AchievementCell.swift */; };
 		F8938CAF25BAC6E000B8A25D /* AchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8938CAD25BAC6E000B8A25D /* AchievementCell.xib */; };
 		F8938CB225BAEF9100B8A25D /* AchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CB125BAEF9100B8A25D /* AchDetailViewController.swift */; };
+		F8938CB525BAFD7800B8A25D /* DiariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CB425BAFD7800B8A25D /* DiariesViewController.swift */; };
+		F8938CB825BAFDFF00B8A25D /* Diaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CB725BAFDFF00B8A25D /* Diaries.swift */; };
+		F8938CBC25BB020800B8A25D /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CBA25BB020800B8A25D /* DiaryCell.swift */; };
+		F8938CBD25BB020800B8A25D /* DiaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8938CBB25BB020800B8A25D /* DiaryCell.xib */; };
 		F8F7ECA525B5AED7005EE1F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA425B5AED7005EE1F1 /* AppDelegate.swift */; };
 		F8F7ECA725B5AED7005EE1F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */; };
 		F8F7ECA925B5AED7005EE1F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA825B5AED7005EE1F1 /* ViewController.swift */; };
@@ -54,6 +58,10 @@
 		F8938CAC25BAC6E000B8A25D /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 		F8938CAD25BAC6E000B8A25D /* AchievementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCell.xib; sourceTree = "<group>"; };
 		F8938CB125BAEF9100B8A25D /* AchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchDetailViewController.swift; sourceTree = "<group>"; };
+		F8938CB425BAFD7800B8A25D /* DiariesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiariesViewController.swift; sourceTree = "<group>"; };
+		F8938CB725BAFDFF00B8A25D /* Diaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diaries.swift; sourceTree = "<group>"; };
+		F8938CBA25BB020800B8A25D /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
+		F8938CBB25BB020800B8A25D /* DiaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryCell.xib; sourceTree = "<group>"; };
 		F8F7ECA125B5AED7005EE1F1 /* IEEE NSUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IEEE NSUT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F7ECA425B5AED7005EE1F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 				F8938C9B25B9C2D300B8A25D /* MenuViewController.swift */,
 				F8938CA625B9DB9C00B8A25D /* AchievementViewController.swift */,
 				F8938CB125BAEF9100B8A25D /* AchDetailViewController.swift */,
+				F8938CB425BAFD7800B8A25D /* DiariesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +178,8 @@
 				F8938C8E25B99CE100B8A25D /* ProjectCell.xib */,
 				F8938CAC25BAC6E000B8A25D /* AchievementCell.swift */,
 				F8938CAD25BAC6E000B8A25D /* AchievementCell.xib */,
+				F8938CBA25BB020800B8A25D /* DiaryCell.swift */,
+				F8938CBB25BB020800B8A25D /* DiaryCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 				F8F7ED2925B97017005EE1F1 /* FeaturedPost.swift */,
 				F8938C9225B99D8D00B8A25D /* Project.swift */,
 				F8938CA925BAC53500B8A25D /* Achievement.swift */,
+				F8938CB725BAFDFF00B8A25D /* Diaries.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +259,7 @@
 				F8938CA325B9DAFF00B8A25D /* GoogleService-Info.plist in Resources */,
 				F8F7ECB125B5AEDA005EE1F1 /* LaunchScreen.storyboard in Resources */,
 				F8F7ED2F25B97257005EE1F1 /* FeaturedPostCell.xib in Resources */,
+				F8938CBD25BB020800B8A25D /* DiaryCell.xib in Resources */,
 				F8F7ECAE25B5AEDA005EE1F1 /* Assets.xcassets in Resources */,
 				F8938CAF25BAC6E000B8A25D /* AchievementCell.xib in Resources */,
 				F8F7ED2025B823C4005EE1F1 /* EventCell.xib in Resources */,
@@ -303,12 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8938CB525BAFD7800B8A25D /* DiariesViewController.swift in Sources */,
 				F8938C9925B9A69000B8A25D /* ProjectDetailedViewController.swift in Sources */,
 				F8F7ECF925B7098D005EE1F1 /* EventViewController.swift in Sources */,
+				F8938CBC25BB020800B8A25D /* DiaryCell.swift in Sources */,
 				F8F7ED2E25B97257005EE1F1 /* FeaturedPostCell.swift in Sources */,
 				F8F7ECF425B708C5005EE1F1 /* Event.swift in Sources */,
 				F8F7ED4425B994F2005EE1F1 /* FeaturedDetailViewController.swift in Sources */,
 				F8F7ECA925B5AED7005EE1F1 /* ViewController.swift in Sources */,
+				F8938CB825BAFDFF00B8A25D /* Diaries.swift in Sources */,
 				F8938C9325B99D8D00B8A25D /* Project.swift in Sources */,
 				F8938C9625B99E1400B8A25D /* ProjectsViewController.swift in Sources */,
 				F8938CA725B9DB9C00B8A25D /* AchievementViewController.swift in Sources */,

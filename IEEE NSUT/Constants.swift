@@ -26,4 +26,7 @@ struct K {
     static let acheivementCellIdentifier = "achievementCellIdentifier"
     static let achievementNib = "AchievementCell"
     static let achievementSegue = "achievementSegue"
+    
+    static let diaryCellIdentifier = "diaryCellIdentifier"
+    static let diaryNib = "DiaryCell"
 }
