@@ -16,6 +16,10 @@
 		F8938C9C25B9C2D300B8A25D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938C9B25B9C2D300B8A25D /* MenuViewController.swift */; };
 		F8938CA325B9DAFF00B8A25D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8938CA225B9DAFF00B8A25D /* GoogleService-Info.plist */; };
 		F8938CA725B9DB9C00B8A25D /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CA625B9DB9C00B8A25D /* AchievementViewController.swift */; };
+		F8938CAA25BAC53500B8A25D /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CA925BAC53500B8A25D /* Achievement.swift */; };
+		F8938CAE25BAC6E000B8A25D /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CAC25BAC6E000B8A25D /* AchievementCell.swift */; };
+		F8938CAF25BAC6E000B8A25D /* AchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8938CAD25BAC6E000B8A25D /* AchievementCell.xib */; };
+		F8938CB225BAEF9100B8A25D /* AchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938CB125BAEF9100B8A25D /* AchDetailViewController.swift */; };
 		F8F7ECA525B5AED7005EE1F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA425B5AED7005EE1F1 /* AppDelegate.swift */; };
 		F8F7ECA725B5AED7005EE1F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */; };
 		F8F7ECA925B5AED7005EE1F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA825B5AED7005EE1F1 /* ViewController.swift */; };
@@ -46,6 +50,10 @@
 		F8938C9B25B9C2D300B8A25D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F8938CA225B9DAFF00B8A25D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F8938CA625B9DB9C00B8A25D /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		F8938CA925BAC53500B8A25D /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		F8938CAC25BAC6E000B8A25D /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		F8938CAD25BAC6E000B8A25D /* AchievementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCell.xib; sourceTree = "<group>"; };
+		F8938CB125BAEF9100B8A25D /* AchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchDetailViewController.swift; sourceTree = "<group>"; };
 		F8F7ECA125B5AED7005EE1F1 /* IEEE NSUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IEEE NSUT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F7ECA425B5AED7005EE1F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 				F8938C9825B9A69000B8A25D /* ProjectDetailedViewController.swift */,
 				F8938C9B25B9C2D300B8A25D /* MenuViewController.swift */,
 				F8938CA625B9DB9C00B8A25D /* AchievementViewController.swift */,
+				F8938CB125BAEF9100B8A25D /* AchDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -158,6 +167,8 @@
 				F8F7ED2D25B97257005EE1F1 /* FeaturedPostCell.xib */,
 				F8938C8D25B99CE100B8A25D /* ProjectCell.swift */,
 				F8938C8E25B99CE100B8A25D /* ProjectCell.xib */,
+				F8938CAC25BAC6E000B8A25D /* AchievementCell.swift */,
+				F8938CAD25BAC6E000B8A25D /* AchievementCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +179,7 @@
 				F8F7ECF325B708C5005EE1F1 /* Event.swift */,
 				F8F7ED2925B97017005EE1F1 /* FeaturedPost.swift */,
 				F8938C9225B99D8D00B8A25D /* Project.swift */,
+				F8938CA925BAC53500B8A25D /* Achievement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +248,7 @@
 				F8F7ECB125B5AEDA005EE1F1 /* LaunchScreen.storyboard in Resources */,
 				F8F7ED2F25B97257005EE1F1 /* FeaturedPostCell.xib in Resources */,
 				F8F7ECAE25B5AEDA005EE1F1 /* Assets.xcassets in Resources */,
+				F8938CAF25BAC6E000B8A25D /* AchievementCell.xib in Resources */,
 				F8F7ED2025B823C4005EE1F1 /* EventCell.xib in Resources */,
 				F8F7ECAC25B5AED7005EE1F1 /* Main.storyboard in Resources */,
 			);
@@ -303,11 +316,14 @@
 				F8F7ED2725B96D80005EE1F1 /* FeaturedViewController.swift in Sources */,
 				F8F7ED2A25B97017005EE1F1 /* FeaturedPost.swift in Sources */,
 				F8938C9C25B9C2D300B8A25D /* MenuViewController.swift in Sources */,
+				F8938CAE25BAC6E000B8A25D /* AchievementCell.swift in Sources */,
 				F8938C8F25B99CE100B8A25D /* ProjectCell.swift in Sources */,
+				F8938CB225BAEF9100B8A25D /* AchDetailViewController.swift in Sources */,
 				F8F7ECA525B5AED7005EE1F1 /* AppDelegate.swift in Sources */,
 				F8F7ECA725B5AED7005EE1F1 /* SceneDelegate.swift in Sources */,
 				F8F7ECFC25B70CEC005EE1F1 /* Constants.swift in Sources */,
 				F8F7ED1F25B823C4005EE1F1 /* EventCell.swift in Sources */,
+				F8938CAA25BAC53500B8A25D /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
