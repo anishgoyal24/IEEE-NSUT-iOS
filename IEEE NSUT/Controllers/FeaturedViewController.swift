@@ -38,7 +38,8 @@ class FeaturedViewController: UIViewController{
     func parseData(documents: [QueryDocumentSnapshot]){
         featuredPosts = []
         for document in documents{
-            let post = FeaturedPost(title: document.get("feedTitle") as? String ?? "", details: document.get("feedDetails") as? String ?? "", imageUrl: document.get("feedImageUrl") as? String ?? "", registerUrl: document.get("registerUrl") as? String ?? "", id: document.get("id") as? Int ?? 0)
+            var post = FeaturedPost(title: document.get("feedTitle") as? String ?? "", details: document.get("feedDetails") as? String ?? "", imageUrl: document.get("feedImageUrl") as? String ?? "", registerUrl: document.get("registerUrl") as? String ?? "", id: document.get("id") as? Int ?? 0)
+            post.details = post.details.replacingOccurrences(of: "\\n", with: "\n")
             self.featuredPosts.append(post)
             DispatchQueue.main.async {
                 self.tableView.reloadData()

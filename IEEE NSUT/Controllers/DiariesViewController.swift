@@ -37,7 +37,8 @@ class DiariesViewController: UIViewController {
     
     func parseData(documents: [QueryDocumentSnapshot]){
         for document in documents{
-            let diary = Diaries(title: document.get("title") as? String ?? "", branch: document.get("date") as? String ?? "", desc: document.get("description") as? String ?? "", imageList: document.get("imageList") as? [String] ?? [], id: document.get("id") as? Int ?? 0)
+            var diary = Diaries(title: document.get("title") as? String ?? "", branch: document.get("date") as? String ?? "", desc: document.get("description") as? String ?? "", imageList: document.get("imageList") as? [String] ?? [], id: document.get("id") as? Int ?? 0)
+            diary.desc = diary.desc.replacingOccurrences(of: "\\n", with: "\n")
             diaries.append(diary)
             DispatchQueue.main.async {
                 self.tableView.reloadData()

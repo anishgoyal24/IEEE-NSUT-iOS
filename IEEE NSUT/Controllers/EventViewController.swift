@@ -36,7 +36,8 @@ class EventViewController: UIViewController{
     func parseData(documents: [QueryDocumentSnapshot]){
         eventsList = []
         for document in documents{
-            let event = Event(title: document.get("title") as? String ?? "", description: document.get("description") as? String ?? "", date: document.get("date") as? String ?? "", imageList: document.get("imageList") as? [String] ?? [])
+            var event = Event(title: document.get("title") as? String ?? "", description: document.get("description") as? String ?? "", date: document.get("date") as? String ?? "", imageList: document.get("imageList") as? [String] ?? [])
+            event.description = event.description.replacingOccurrences(of: "\\n", with: "\n")
             self.eventsList.append(event)
             DispatchQueue.main.async {
                 self.tableView.reloadData()

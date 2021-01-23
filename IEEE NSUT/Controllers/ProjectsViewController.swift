@@ -36,7 +36,8 @@ class ProjectsViewController: UIViewController {
     func parseData(documents: [QueryDocumentSnapshot]){
         projectsList = []
         for document in documents{
-            let project = Project(projectTitle: document.get("title") as? String ?? "", projectCategory: document.get("date") as? String ?? "", projectImage: document.get("imageList") as? [String] ?? [], projectDesc: document.get("description") as? String ?? "", projectId: document.get("id") as? Int ?? 0)
+            var project = Project(projectTitle: document.get("title") as? String ?? "", projectCategory: document.get("date") as? String ?? "", projectImage: document.get("imageList") as? [String] ?? [], projectDesc: document.get("description") as? String ?? "", projectId: document.get("id") as? Int ?? 0)
+            project.projectDesc = project.projectDesc.replacingOccurrences(of: "\\n", with: "\n")
             projectsList.append(project)
             DispatchQueue.main.async {
                 self.tableView.reloadData()

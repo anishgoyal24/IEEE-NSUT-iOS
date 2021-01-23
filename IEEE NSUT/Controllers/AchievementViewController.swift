@@ -36,7 +36,8 @@ class AchievementViewController: UIViewController {
     func parseData(documents: [QueryDocumentSnapshot]){
         achievements = []
         for document in documents{
-            let achievement = Achievement(title: document.get("title") as? String ?? "", id: document.get("id") as? Int ?? 0, description: document.get("description") as? String ?? "", date: document.get("date") as? String ?? "", imageList: document.get("imageList") as? [String] ?? [])
+            var achievement = Achievement(title: document.get("title") as? String ?? "", id: document.get("id") as? Int ?? 0, description: document.get("description") as? String ?? "", date: document.get("date") as? String ?? "", imageList: document.get("imageList") as? [String] ?? [])
+            achievement.description = achievement.description.replacingOccurrences(of: "\\n", with: "\n")
             achievements.append(achievement)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
