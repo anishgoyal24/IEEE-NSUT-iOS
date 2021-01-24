@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Diaries {
+struct Diary {
     var title: String
     var branch: String
     var desc: String

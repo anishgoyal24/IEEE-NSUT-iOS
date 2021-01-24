@@ -12,7 +12,7 @@ import Alamofire
 class DiariesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var diaries: [Diaries] = []
+    var diaries: [Diary] = []
     let db = Firestore.firestore()
     let imageCache = NSCache<AnyObject, AnyObject>()
     
@@ -37,12 +37,19 @@ class DiariesViewController: UIViewController {
     
     func parseData(documents: [QueryDocumentSnapshot]){
         for document in documents{
-            var diary = Diaries(title: document.get("title") as? String ?? "", branch: document.get("date") as? String ?? "", desc: document.get("description") as? String ?? "", imageList: document.get("imageList") as? [String] ?? [], id: document.get("id") as? Int ?? 0)
+            var diary = Diary(title: document.get("title") as? String ?? "", branch: document.get("date") as? String ?? "", desc: document.get("description") as? String ?? "", imageList: document.get("imageList") as? [String] ?? [], id: document.get("id") as? Int ?? 0)
             diary.desc = diary.desc.replacingOccurrences(of: "\\n", with: "\n")
             diaries.append(diary)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is DiaryDetailsViewController{
+            let vc = segue.destination as! DiaryDetailsViewController
+            vc.diary = diaries[sender as! Int]
         }
     }
 
@@ -74,5 +81,8 @@ extension DiariesViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: K.diarySegue, sender: indexPath.row)
+    }
     
 }

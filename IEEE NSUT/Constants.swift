@@ -29,4 +29,5 @@ struct K {
     
     static let diaryCellIdentifier = "diaryCellIdentifier"
     static let diaryNib = "DiaryCell"
+    static let diarySegue = "diaryDetailsSegue"
 }
