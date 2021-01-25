@@ -30,4 +30,10 @@ struct K {
     static let diaryCellIdentifier = "diaryCellIdentifier"
     static let diaryNib = "DiaryCell"
     static let diarySegue = "diaryDetailsSegue"
+    
+    static let execommCellIdentifier = "execommCellIdentifier"
+    static let execommNib = "ExecommCell"
+    static let execommSegue = "execommSegue"
+    
+    static let menuSegues = ["aboutSegue", "execommSegue", "contactSegue", "membershipSegue", "developerSegue"]
 }

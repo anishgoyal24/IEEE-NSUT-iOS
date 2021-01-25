@@ -129,6 +129,21 @@
             </objects>
             <point key="canvasLocation" x="2776.811594202899" y="363.61607142857139"/>
         </scene>
+        <!--About IEEE-->
+        <scene sceneID="Q1L-DO-uOm">
+            <objects>
+                <viewController title="About IEEE" id="eIQ-4p-DQM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="enZ-27-yv3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GHZ-DF-g3A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlU-Pg-6RY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1672" y="1352"/>
+        </scene>
         <!--Menu-->
         <scene sceneID="FxL-FL-f5P">
             <objects>
@@ -163,11 +178,75 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="HYZ-Z8-cRs" id="vIs-c0-vbH"/>
+                        <segue destination="sdO-W4-zdJ" kind="showDetail" identifier="execommSegue" id="brg-02-kjz"/>
+                        <segue destination="eIQ-4p-DQM" kind="showDetail" id="k4l-fx-jpq"/>
+                        <segue destination="l2B-0c-H0I" kind="showDetail" id="FQ9-SB-jlQ"/>
+                        <segue destination="72y-jA-sKM" kind="showDetail" id="rCB-X4-AVu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wL-Z5-7Ad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-730.43478260869574" y="1319.8660714285713"/>
+        </scene>
+        <!--Execomm-->
+        <scene sceneID="64R-dw-1JJ">
+            <objects>
+                <viewController title="Execomm" id="sdO-W4-zdJ" customClass="ExecommViewController" customModule="IEEE_NSUT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oK5-zk-Gf3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JOF-4s-orh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PeB-Q1-soX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JOF-4s-orh" firstAttribute="leading" secondItem="PeB-Q1-soX" secondAttribute="leading" id="5MR-nW-L9d"/>
+                            <constraint firstItem="JOF-4s-orh" firstAttribute="bottom" secondItem="PeB-Q1-soX" secondAttribute="bottom" id="aOu-vs-KAX"/>
+                            <constraint firstItem="JOF-4s-orh" firstAttribute="top" secondItem="PeB-Q1-soX" secondAttribute="top" id="jLI-WK-HdE"/>
+                            <constraint firstItem="JOF-4s-orh" firstAttribute="trailing" secondItem="PeB-Q1-soX" secondAttribute="trailing" id="kcZ-sW-ucA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JOF-4s-orh" id="XVJ-KC-a4W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxt-V0-YqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1420.289855072464" y="2094.6428571428569"/>
+        </scene>
+        <!--Contact Us-->
+        <scene sceneID="xWf-VF-uqV">
+            <objects>
+                <viewController title="Contact Us" id="l2B-0c-H0I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6R4-A7-UPM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="feQ-Jx-QcX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAA-Oa-a5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="2297"/>
+        </scene>
+        <!--App Developer-->
+        <scene sceneID="5JP-o1-GOK">
+            <objects>
+                <viewController title="App Developer" id="72y-jA-sKM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u0U-6v-GNg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zQ5-ix-Dxq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxe-LX-Fbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="428" y="1935"/>
         </scene>
         <!--Featured-->
         <scene sceneID="a8s-ID-wOS">
