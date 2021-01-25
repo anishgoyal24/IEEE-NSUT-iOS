@@ -29,11 +29,12 @@
 		F8AC799A25BD61B8005CA7FB /* Execomm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC799925BD61B8005CA7FB /* Execomm.swift */; };
 		F8AC799E25BD630A005CA7FB /* ExecommCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC799C25BD630A005CA7FB /* ExecommCell.swift */; };
 		F8AC799F25BD630A005CA7FB /* ExecommCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8AC799D25BD630A005CA7FB /* ExecommCell.xib */; };
+		F8AC79A225BE992E005CA7FB /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC79A125BE992E005CA7FB /* DeveloperViewController.swift */; };
+		F8AC79A625BECA2A005CA7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AC79A525BECA2A005CA7FB /* Assets.xcassets */; };
 		F8F7ECA525B5AED7005EE1F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA425B5AED7005EE1F1 /* AppDelegate.swift */; };
 		F8F7ECA725B5AED7005EE1F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */; };
 		F8F7ECA925B5AED7005EE1F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECA825B5AED7005EE1F1 /* ViewController.swift */; };
 		F8F7ECAC25B5AED7005EE1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7ECAA25B5AED7005EE1F1 /* Main.storyboard */; };
-		F8F7ECAE25B5AEDA005EE1F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F7ECAD25B5AEDA005EE1F1 /* Assets.xcassets */; };
 		F8F7ECB125B5AEDA005EE1F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7ECAF25B5AEDA005EE1F1 /* LaunchScreen.storyboard */; };
 		F8F7ECF425B708C5005EE1F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECF325B708C5005EE1F1 /* Event.swift */; };
 		F8F7ECF925B7098D005EE1F1 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7ECF825B7098D005EE1F1 /* EventViewController.swift */; };
@@ -72,12 +73,13 @@
 		F8AC799925BD61B8005CA7FB /* Execomm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Execomm.swift; sourceTree = "<group>"; };
 		F8AC799C25BD630A005CA7FB /* ExecommCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecommCell.swift; sourceTree = "<group>"; };
 		F8AC799D25BD630A005CA7FB /* ExecommCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExecommCell.xib; sourceTree = "<group>"; };
+		F8AC79A125BE992E005CA7FB /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
+		F8AC79A525BECA2A005CA7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		F8F7ECA125B5AED7005EE1F1 /* IEEE NSUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IEEE NSUT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F7ECA425B5AED7005EE1F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F8F7ECA825B5AED7005EE1F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8F7ECAB25B5AED7005EE1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F8F7ECAD25B5AEDA005EE1F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8F7ECB025B5AEDA005EE1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8F7ECB225B5AEDA005EE1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F7ECF325B708C5005EE1F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -149,9 +151,9 @@
 				F8F7ECA625B5AED7005EE1F1 /* SceneDelegate.swift */,
 				F8F7ECCA25B6FC9C005EE1F1 /* Controllers */,
 				F8F7ECCE25B6FCAF005EE1F1 /* View */,
-				F8F7ECAD25B5AEDA005EE1F1 /* Assets.xcassets */,
 				F8F7ECAF25B5AEDA005EE1F1 /* LaunchScreen.storyboard */,
 				F8F7ECB225B5AEDA005EE1F1 /* Info.plist */,
+				F8AC79A525BECA2A005CA7FB /* Assets.xcassets */,
 				F8F7ECF625B708CA005EE1F1 /* Model */,
 				F8F7ECFB25B70CEC005EE1F1 /* Constants.swift */,
 			);
@@ -174,6 +176,7 @@
 				F8938CB425BAFD7800B8A25D /* DiariesViewController.swift */,
 				F8AC799225BD55DA005CA7FB /* DiaryDetailsViewController.swift */,
 				F8AC799625BD608A005CA7FB /* ExecommViewController.swift */,
+				F8AC79A125BE992E005CA7FB /* DeveloperViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -274,8 +277,8 @@
 				F8938CA325B9DAFF00B8A25D /* GoogleService-Info.plist in Resources */,
 				F8F7ECB125B5AEDA005EE1F1 /* LaunchScreen.storyboard in Resources */,
 				F8F7ED2F25B97257005EE1F1 /* FeaturedPostCell.xib in Resources */,
+				F8AC79A625BECA2A005CA7FB /* Assets.xcassets in Resources */,
 				F8938CBD25BB020800B8A25D /* DiaryCell.xib in Resources */,
-				F8F7ECAE25B5AEDA005EE1F1 /* Assets.xcassets in Resources */,
 				F8938CAF25BAC6E000B8A25D /* AchievementCell.xib in Resources */,
 				F8F7ED2025B823C4005EE1F1 /* EventCell.xib in Resources */,
 				F8AC799F25BD630A005CA7FB /* ExecommCell.xib in Resources */,
@@ -347,6 +350,7 @@
 				F8938C9625B99E1400B8A25D /* ProjectsViewController.swift in Sources */,
 				F8938CA725B9DB9C00B8A25D /* AchievementViewController.swift in Sources */,
 				F8F7ED2325B83CF0005EE1F1 /* EventDetailsViewController.swift in Sources */,
+				F8AC79A225BE992E005CA7FB /* DeveloperViewController.swift in Sources */,
 				F8F7ED2725B96D80005EE1F1 /* FeaturedViewController.swift in Sources */,
 				F8F7ED2A25B97017005EE1F1 /* FeaturedPost.swift in Sources */,
 				F8938C9C25B9C2D300B8A25D /* MenuViewController.swift in Sources */,
