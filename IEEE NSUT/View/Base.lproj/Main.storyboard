@@ -179,8 +179,8 @@
                     <connections>
                         <outlet property="tableView" destination="HYZ-Z8-cRs" id="vIs-c0-vbH"/>
                         <segue destination="sdO-W4-zdJ" kind="showDetail" identifier="execommSegue" id="brg-02-kjz"/>
-                        <segue destination="eIQ-4p-DQM" kind="showDetail" id="k4l-fx-jpq"/>
-                        <segue destination="l2B-0c-H0I" kind="showDetail" id="FQ9-SB-jlQ"/>
+                        <segue destination="eIQ-4p-DQM" kind="showDetail" identifier="aboutSegue" id="k4l-fx-jpq"/>
+                        <segue destination="l2B-0c-H0I" kind="showDetail" identifier="contactSegue" id="FQ9-SB-jlQ"/>
                         <segue destination="72y-jA-sKM" kind="showDetail" identifier="developerSegue" id="rCB-X4-AVu"/>
                     </connections>
                 </viewController>
@@ -260,63 +260,77 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03l-kp-Z8t">
-                                <rect key="frame" x="120" y="331" width="24" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" image="mail.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="mailAction:" destination="72y-jA-sKM" eventType="touchUpInside" id="V4h-a2-Nwk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6De-Jh-2kM">
-                                <rect key="frame" x="169" y="331" width="20" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" image="phone.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="phoneAction:" destination="72y-jA-sKM" eventType="touchUpInside" id="0ed-SB-ibA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j26-eE-CCz">
-                                <rect key="frame" x="263" y="333" width="24" height="24"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1t-Dn-TgS">
+                                <rect key="frame" x="103.5" y="331" width="207" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03l-kp-Z8t">
+                                        <rect key="frame" x="20" y="20" width="24" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" image="mail.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="mailAction:" destination="72y-jA-sKM" eventType="touchUpInside" id="V4h-a2-Nwk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6De-Jh-2kM">
+                                        <rect key="frame" x="69" y="20" width="20" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" image="phone.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="phoneAction:" destination="72y-jA-sKM" eventType="touchUpInside" id="0ed-SB-ibA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibz-mu-wos">
+                                        <rect key="frame" x="114" y="20" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="ezI-YC-8Uy"/>
+                                            <constraint firstAttribute="height" constant="24" id="ooc-HT-1o2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" image="icons8-linkedin-48"/>
+                                        <connections>
+                                            <action selector="linkedinButton:" destination="72y-jA-sKM" eventType="touchUpInside" id="S6q-Uk-Tl2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j26-eE-CCz">
+                                        <rect key="frame" x="163" y="20" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="0Zn-fq-zCP"/>
+                                            <constraint firstAttribute="height" constant="24" id="N3Q-QV-Bvk"/>
+                                        </constraints>
+                                        <state key="normal" image="git-black"/>
+                                        <connections>
+                                            <action selector="githubButton:" destination="72y-jA-sKM" eventType="touchUpInside" id="3kH-3r-mNM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="0Zn-fq-zCP"/>
-                                    <constraint firstAttribute="height" constant="24" id="N3Q-QV-Bvk"/>
+                                    <constraint firstItem="j26-eE-CCz" firstAttribute="top" secondItem="v1t-Dn-TgS" secondAttribute="top" constant="20" id="6BN-oX-C6y"/>
+                                    <constraint firstItem="03l-kp-Z8t" firstAttribute="leading" secondItem="v1t-Dn-TgS" secondAttribute="leading" constant="20" symbolic="YES" id="7Jf-Kr-1f0"/>
+                                    <constraint firstItem="6De-Jh-2kM" firstAttribute="leading" secondItem="03l-kp-Z8t" secondAttribute="trailing" constant="25" id="9Kw-6K-0x2"/>
+                                    <constraint firstItem="Ibz-mu-wos" firstAttribute="leading" secondItem="6De-Jh-2kM" secondAttribute="trailing" constant="25" id="9Op-Lz-6ht"/>
+                                    <constraint firstItem="6De-Jh-2kM" firstAttribute="top" secondItem="v1t-Dn-TgS" secondAttribute="top" constant="20" symbolic="YES" id="Sn0-z2-f1d"/>
+                                    <constraint firstAttribute="bottom" secondItem="j26-eE-CCz" secondAttribute="bottom" constant="20" id="T9V-4P-v5E"/>
+                                    <constraint firstItem="03l-kp-Z8t" firstAttribute="top" secondItem="v1t-Dn-TgS" secondAttribute="top" constant="20" symbolic="YES" id="Ttc-b2-epC"/>
+                                    <constraint firstAttribute="bottom" secondItem="6De-Jh-2kM" secondAttribute="bottom" constant="20" symbolic="YES" id="ViY-nY-oc8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ibz-mu-wos" secondAttribute="bottom" constant="20" id="bN1-CF-wQ4"/>
+                                    <constraint firstAttribute="bottom" secondItem="03l-kp-Z8t" secondAttribute="bottom" constant="20" symbolic="YES" id="eBU-Zp-Tp8"/>
+                                    <constraint firstAttribute="trailing" secondItem="j26-eE-CCz" secondAttribute="trailing" constant="20" symbolic="YES" id="eEL-ec-ngz"/>
+                                    <constraint firstItem="j26-eE-CCz" firstAttribute="leading" secondItem="Ibz-mu-wos" secondAttribute="trailing" constant="25" id="sOT-nY-6Xd"/>
+                                    <constraint firstItem="Ibz-mu-wos" firstAttribute="top" secondItem="v1t-Dn-TgS" secondAttribute="top" constant="20" id="tRA-mn-BAB"/>
                                 </constraints>
-                                <state key="normal" image="git-black"/>
-                                <connections>
-                                    <action selector="githubButton:" destination="72y-jA-sKM" eventType="touchUpInside" id="3kH-3r-mNM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibz-mu-wos">
-                                <rect key="frame" x="214" y="333" width="24" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="ezI-YC-8Uy"/>
-                                    <constraint firstAttribute="height" constant="24" id="ooc-HT-1o2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" image="icons8-linkedin-48"/>
-                                <connections>
-                                    <action selector="linkedinButton:" destination="72y-jA-sKM" eventType="touchUpInside" id="S6q-Uk-Tl2"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zQ5-ix-Dxq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XTF-LM-2xb" firstAttribute="centerX" secondItem="u0U-6v-GNg" secondAttribute="centerX" id="1rf-pW-xew"/>
-                            <constraint firstItem="03l-kp-Z8t" firstAttribute="leading" secondItem="zQ5-ix-Dxq" secondAttribute="leading" constant="120" id="Al4-q5-Xo3"/>
-                            <constraint firstItem="6De-Jh-2kM" firstAttribute="leading" secondItem="03l-kp-Z8t" secondAttribute="trailing" constant="25" id="CVg-9q-R1n"/>
-                            <constraint firstItem="Ibz-mu-wos" firstAttribute="leading" secondItem="6De-Jh-2kM" secondAttribute="trailing" constant="25" id="EMl-Tz-qQj"/>
                             <constraint firstItem="Q4E-93-fst" firstAttribute="top" secondItem="qHk-Cs-Za9" secondAttribute="bottom" constant="8" id="Mvq-sD-obh"/>
                             <constraint firstItem="qHk-Cs-Za9" firstAttribute="centerX" secondItem="u0U-6v-GNg" secondAttribute="centerX" id="Spw-5u-QHU"/>
-                            <constraint firstItem="j26-eE-CCz" firstAttribute="leading" secondItem="Ibz-mu-wos" secondAttribute="trailing" constant="25" id="SwQ-qM-daJ"/>
-                            <constraint firstItem="j26-eE-CCz" firstAttribute="top" secondItem="XTF-LM-2xb" secondAttribute="bottom" constant="98" id="TTV-Wj-d6k"/>
-                            <constraint firstItem="6De-Jh-2kM" firstAttribute="top" secondItem="XTF-LM-2xb" secondAttribute="bottom" constant="96" id="Tkx-iD-Tmc"/>
+                            <constraint firstItem="v1t-Dn-TgS" firstAttribute="centerX" secondItem="u0U-6v-GNg" secondAttribute="centerX" id="VYu-T8-cR3"/>
                             <constraint firstItem="qHk-Cs-Za9" firstAttribute="top" secondItem="XTF-LM-2xb" secondAttribute="bottom" constant="20" id="aKc-8m-vGS"/>
-                            <constraint firstItem="03l-kp-Z8t" firstAttribute="top" secondItem="XTF-LM-2xb" secondAttribute="bottom" constant="96" id="f2L-NA-tep"/>
                             <constraint firstItem="Q4E-93-fst" firstAttribute="centerX" secondItem="u0U-6v-GNg" secondAttribute="centerX" id="suf-5X-y0g"/>
-                            <constraint firstItem="Ibz-mu-wos" firstAttribute="top" secondItem="XTF-LM-2xb" secondAttribute="bottom" constant="98" id="vHw-KJ-iKB"/>
                             <constraint firstItem="XTF-LM-2xb" firstAttribute="top" secondItem="zQ5-ix-Dxq" secondAttribute="top" constant="35" id="z8I-hR-DeG"/>
+                            <constraint firstItem="v1t-Dn-TgS" firstAttribute="top" secondItem="Q4E-93-fst" secondAttribute="bottom" constant="8" id="zzK-sw-oQZ"/>
                         </constraints>
                     </view>
                     <connections>

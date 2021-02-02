@@ -36,4 +36,6 @@ struct K {
     static let execommSegue = "execommSegue"
     
     static let menuSegues = ["aboutSegue", "execommSegue", "contactSegue", "membershipSegue", "developerSegue"]
+    
+    static let registerURL = "https://docs.google.com/forms/d/e/1FAIpQLSe92LHpgIFl9dvsDGR1H_Rwl9dQyvGbtjfBr67IcmkAbf-Rrw/viewform"
 }

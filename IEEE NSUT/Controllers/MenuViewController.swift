@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class MenuViewController: UIViewController {
 
@@ -31,7 +32,14 @@ extension MenuViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: K.menuSegues[indexPath.row], sender: nil)
+        if (indexPath.row == 3){
+            let webVC = SFSafariViewController(url: URL(string: K.registerURL)!)
+            present(webVC, animated: true, completion: nil)
+        }
+        else {
+            performSegue(withIdentifier: K.menuSegues[indexPath.row], sender: nil)
+            
+        }
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
